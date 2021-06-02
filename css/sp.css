@@ -1,0 +1,598 @@
+/* --------------------------------------------- */
+/* ▼スマホ用デザインとして付け足すデザイン */
+/* --------------------------------------------- */
+
+/* 可変色 */
+
+.divider {
+  background: pink;
+  height: 500px;
+}
+
+/* sp-header */
+
+.head-pc{
+  display: none;
+}
+
+.head-sp {
+  display: block;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  z-index: 2;
+}
+
+.header-in-sp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.head-img img {
+  margin-top: 15px;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+/*.head-r {
+  /*margin: 15px 18px 0 0;*/
+  /*margin: 4% 5% 0 0
+}*/
+
+.menu-btn {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  display: flex;
+  height: 55px;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  border: 4px solid #03669f;
+  background-color: #fff;
+}
+
+.menu-btn span, .menu-btn span:before, .menu-btn span:after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 32px;
+  border-radius: 3px;
+  background-color: #03669f;
+  position: absolute;
+}
+.menu-btn span:before {
+  bottom: 8px;
+  margin-bottom: 2px;
+}
+.menu-btn span:after {
+  top: 8px;
+  margin-top: 2px
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+  background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+
+#menu-btn-check:checked ~ .menu-btn span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+  margin: 0;
+}
+
+#menu-btn-check:checked ~ .menu-btn span::after {
+  top: 0;
+  transform: rotate(-45deg);
+  margin: 0;
+}
+
+#menu-btn-check {
+  display: none;
+}
+
+label.menu-btn:hover {
+  cursor: pointer;
+}
+
+.menu-content {
+  width: 100%;
+  height: auto!important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  background-color: #03669f;
+}
+
+.menu-content ul {
+  text-align: center;
+}
+
+.menu-content ul li {
+  border-bottom: solid 3px #87ceeb;
+}
+
+.menu-content ul li:last-child {
+  border: none;
+}
+
+.menu-content ul li a {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.menu-content ul li a::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+}
+
+.menu-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;/*leftの値を変更してメニューを画面外へ*/
+  z-index: 80;
+  background-color: #3584bb;
+  transition: all 0.5s;/*アニメーション設定*/
+}
+
+#menu-btn-check:checked ~ .menu-content {
+  left: 0;/*メニューを画面内へ*/
+  height: auto;
+  margin-top: 100px;
+}
+
+.top-txt img {
+  margin: 57px 0 120px;
+  width: 60px;
+}
+
+/* snow-block */
+
+.u-t-mountain {
+  padding: 50px 0 60px;
+}
+
+img.ut-txt {
+  width: 85%;
+  height: auto;
+  max-width: 100%;
+}
+
+#snow1 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -10%;
+  left: -4%;
+}
+
+#snow2 {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 52%;
+  left: -2%;
+}
+
+#snow3 {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: -36%;
+  right: 10%;
+}
+
+#snow4 {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0%;
+  right: -2%;
+}
+
+/* about-us */
+
+.about-us {
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.ab-inner {
+  margin: 0 5%;
+}
+
+img.ab-img-f {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+img.ab-img-s {
+  padding: 0 20%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.ab-inner-s {
+  margin-top: 50px;
+}
+
+.ab-item-f {
+  line-height: 1.8;
+  margin: 0 0 20px;
+  font-weight: 400;
+  color: #282828;
+  font-size: 14px;
+}
+
+a.blue-btn {
+  padding: 1em 6em;
+}
+
+/* news */
+
+.news-inner {
+  margin: 0 5%;
+}
+
+.news-inner .ab-btn {
+  margin: 30px 0 20px;
+}
+
+.news-block {
+  width: 100%;
+}
+
+dt,dd {
+  font-size: 16px;
+}
+
+dt {
+  padding-top: 3px;
+}
+
+dd {
+  font-size: 16px;
+  padding-left: 100px;
+  line-height: 1.4;
+}
+
+.btn-block {
+  width: 89%;
+  margin: 10px auto;
+}
+
+div#snow5 {
+  position: absolute;
+  top: 83%;
+  left: 2%;
+}
+
+div#snow6 {
+  position: absolute;
+  top: 64%;
+  left: 78%;
+}
+
+div#snow7 {
+  position: absolute;
+  top: 5%;
+  left: 1%;
+}
+
+div#snow8 {
+  position: absolute;
+  top: 66%;
+  left: -4%;
+}
+
+div#snow9 {
+  position: absolute;
+  top: 19%;
+  right: -3%;
+}
+
+div#snow10 {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+
+/* tour-block */
+
+.tour-inner p.tts {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.slide-block {
+  margin: 0 35px 20px;
+}
+
+.ab-btn {
+  margin-top: 25px;
+}
+
+.arrow-right {
+  position: absolute;
+  top: 35%;
+  right: 11%;
+}
+
+.arrow-left {
+  position: absolute;
+  top: 35%;
+  left: 11%;
+}
+
+li.slide-list img {
+  width: 130px;
+  height: auto;
+}
+
+/* local-block */
+
+.local-block {
+  padding-bottom: 20px;
+}
+
+.local-inner {
+  width: 95%;
+  height: auto;
+  margin: 0 auto 90px;
+}
+
+p.tts.lo-deliver {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+
+.local-box {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.local-line {
+  padding: 0;
+  width: 100%;
+  height: auto;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.local-line:first-child {
+  margin-bottom: 30px;
+}
+
+.local-in {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.lo-img {
+  /*width: 50%;*/
+  width: 35%;
+  height: auto;
+  margin-top: 5px;
+}
+
+.lo-img img {
+  width: 126px;
+  height: 144px;
+  max-width: 100%;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 98%, 1% 75%, 0 25%);
+  margin-left: -15px;
+}
+
+/*
+  .lo-img img {
+    width: 141px;
+    height: 168px;
+    max-width: 100%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 98%, 1% 75%, 0 25%);
+    margin-left: 5px;
+}*/
+
+
+@media(max-width:500px) {
+.lo-txt {
+  margin-left: -10%;
+  width: 50%;
+}
+}
+
+@media(min-width:501px) and (max-width: 768px) {
+.lo-txt {
+  margin-left: -30%;
+  width: 50%;
+}
+}
+
+/*@medea(min-width: 401px)and(max-width: 768px){
+  .lo-txt {
+    margin-left:
+  }
+}*/
+
+
+p.tts.lo-tit {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+p.tts.lo-details {
+  margin-bottom: 10px;
+}
+
+/* people */
+
+.people {
+  margin-bottom: 36px;
+}
+.ppl-inner {
+  min-height: 240px;
+}
+
+p.tts.ppl-txt {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.ab-btn.ppl-bb {
+  margin-bottom: 25px;
+}
+
+/* footer */
+
+footer {
+  background: url(../images/footer_mainimg_01.png);
+  width: 100%;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center 178px;
+  background-size: 110em;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 60px;
+  color: #fff;
+  position: relative;
+}
+
+div#snow11 {
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: 38%;
+  left: 25%;
+}
+
+div#snow12 {
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  top: 52%;
+  left: 0;
+}
+
+
+div#snow14 {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 40%;
+  left: 37%;
+}
+
+div#snow15 {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 56%;
+  left: 0;
+}
+
+div#snow16 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 44%;
+  right: 4%;
+}
+
+div#snow17 {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 56%;
+  right: -8%;
+}
+
+@media screen and (min-width:500px) and ( max-width:768px) {
+  div#snow15 {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 65%;
+    left: 2%;
+}
+  div#snow16 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 47%;
+    right: 18%;
+}
+div#snow17 {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 58%;
+  right: -4%;
+}
+}
+marquee.cloud1 {
+  position: absolute;
+  top: 4%;
+  left: 20%;
+}
+
+marquee.cloud2 {
+  position: absolute;
+  top: 14%;
+  left: -30%;
+}
+
+marquee.cloud3 {
+  position: absolute;
+  top: 11%;
+  right: 5%;
+  width: 280px;
+}
+
+marquee.cloud4 {
+  position: absolute;
+  top: 26%;
+  right: -30%;
+}
+
+.fo-sizuku-f {
+  position: absolute;
+  top: 59%;
+  left: 50%;
+}
+
+.fo-sizuku-s {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.co-txt p.tts {
+  white-space: nowrap;
+}
+
+br.brsp {
+  display: block;
+}

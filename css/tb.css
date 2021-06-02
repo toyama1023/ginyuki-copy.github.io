@@ -1,0 +1,137 @@
+/* -------------------------------------------- */
+/* ▼タブレット用デザインとして付け足すデザイン */
+/* -------------------------------------------- */
+
+
+
+
+/* 可変色 */
+
+.divider {
+  background: lightgreen;
+  height: 500px;
+}
+
+/* tab-header */
+
+.brsp {
+  display: none;
+}
+
+.head-sp{
+  display: none;
+}
+
+.header-in {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.head-img {
+  display: inline-block;
+  margin-top: 32px;
+}
+
+.head-img img {
+  margin-top: 10px;
+}
+
+ul.h-n-list {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+li.h-n-item {
+  font-size: 12px;
+}
+
+a.h-n-link {
+  padding: 0 10px;
+}
+
+/* snow-block */
+
+.ab-inner {
+  margin: 0 5%;
+}
+
+.ab-inner-s {
+  margin-top: 50px;
+}
+
+img.ab-img-s {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/* about-us */
+
+/* news */
+
+.news-block {
+  width: 76%;
+  margin: auto;
+}
+
+div#snow8 {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+}
+
+/* tour-block */
+
+.arrow-right {
+  position: absolute;
+  top: 40%;
+  right: 2%;
+}
+
+.arrow-left {
+  position: absolute;
+  top: 40%;
+  left: 2%;
+}
+
+/* local-block */
+
+.local-inner {
+  width: 90%;
+  height: auto;
+  margin: 0 auto 70px;
+}
+
+p.tts.lo-deliver {
+  line-height: 1.2;
+}
+
+.local-line {
+  padding: 0 10px;
+}
+
+.local-in {
+  margin: 0 10px;
+}
+
+.lo-img img {
+  width: 80%;
+  height: 80%;
+  max-width: 100%;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 98%, 1% 75%, 0 25%);
+}
+
+.lo-txt {
+  margin: 5px 10px;
+}
+
+p.tts.lo-tit {
+  margin: 15px 0;
+}
+
+/* people */
+
+/* footer */
+
